@@ -18,5 +18,4 @@ jobs:
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
         protocol: ftp
-        passive: true
-        exclude: .editorconfig,.env
+        exclude: .editorconfig
