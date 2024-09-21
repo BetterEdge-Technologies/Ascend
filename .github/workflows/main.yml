@@ -23,5 +23,3 @@ jobs:
         server: ftp.betteredgestechnologies.com.ng 
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
-        log-level: minimal
-        exclude: .editorconfig,.env,.env.example
