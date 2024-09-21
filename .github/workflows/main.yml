@@ -41,3 +41,6 @@ jobs:
           **/.git*
           **/.git*/**
           **/node_modules/**
+          **/.editorconfig/**
+          **/.env/**
+          **/.env.example/**
