@@ -16,8 +16,13 @@ jobs:
       - name: Set up laravel
         uses: shivammathur/setup-php@v2
         with:
-          php-version: '8.2'  # Specify your PHP version
-          extensions: mbstring, xml, zip, gd, mysqli  # Add any required extensions
+          php-version: '8.3' 
+        
+      - name: Remove cached bootstrap file
+        run: sudo rm -rf bootstrap/services.php bootstrap/cache/packages.php
+        
+      - name: Install composer dependencies
+        run: composer install --no-interaction --prefer-dist
 
       - name: Install Composer dependencies
         run: composer install --no-dev --optimize-autoloader
